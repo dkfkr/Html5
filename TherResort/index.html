@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tour Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font: normal 12px "Dotum";            
+        }
+
+        ul, ol {list-style: none;}
+        a {text-decoration: none; color: #111;}
+        
+        img {
+            border: 0;
+        }
+
+        #wrapper {
+            width: 100%;
+        }
+
+        header {
+            width: 100%;
+            height: 100px;
+            background-color: #fefefe;
+            background-image: url(./images/header_bg.png);
+            background-repeat: repeat-x;
+            background-position: bottom;
+        }
+
+        header > div {
+            position: relative;
+            width: 1000px;
+            height: 100px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #111;
+        }
+
+        header > div > ul {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 28px;
+        }
+        header > div > ul > li {
+            float: left;
+            width: 20%;
+            height: 100%;
+        }
+
+        main {
+            width: 1000px;
+            height: auto;
+        }
+
+        main > section {
+            width: 100%;
+            height: 620px;
+        }
+        main > section > div {
+            float: left;
+            width: 200px;
+            height: 200px;
+        }
+
+        main > section > div:nth-child(1) {}
+        main > section > div:nth-child(2) {}
+        main > section > div:nth-child(3) {}
+        main > section > div:nth-child(4) {}
+        main > section > div:nth-child(5) {clear: left;}
+        main > section > div:nth-child(6) {}
+        main > section > div:nth-child(7) {clear: left; margin-left: 200px;}
+        
+        main > article {
+            width: 100%;
+            height: 150px;
+        }
+
+        main > article > div {
+            float: left;
+            width: 25%;
+            height: 100%;
+        }
+
+        footer {
+            width: 1000px;
+            height: 100px;
+            margin: 0 auto;
+        }
+
+        footer > #address {
+            border-top: 1px solid #b9cadc;
+        }
+
+        #address > .logo {
+            float: left;
+            padding-top: 14px;
+        }
+
+        footer > div > p {
+            font-size: 11px;
+            display: inline-block;
+            margin-top: 20px;
+            padding-left: 20px;
+            color: #555;
+            line-height: 20px;
+        }
+
+        footer > div > p > #copy {
+            display: inline-block;
+            font-family: Verdana;
+            color: rgb(153, 153, 153);
+            padding-top: 4px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div>
+                <a href="index.html">
+                    <img src="./images/header_logo.png" alt="header_logo">
+                </a>
+                <div class="lnb">
+                    <span>
+                        <a href="#">회원가입 |</a>
+                    </span>
+                    <span>
+                        <a href="#">로그인 |</a>
+                    </span>
+                    <span>
+                        <a href="#">고객센터 |</a>
+                    </span>
+                </div>
+                <nav class="gnb">
+                   <a href="#">INTRODUCTION</a>
+                   <a href="#">ROOM</a>
+                   <a href="#">TRAVEL</a>
+                   <a href="#">INFORMATION</a>
+                   <a href="#">COMMUNITY</a>
+                </nav>           
+            </div>
+        </header>
+        <main> 
+            <section class="mama">
+                <div id="article">
+                <div class="box1">
+                    <img src="./images/main_box1_img.png" alt="나뭇잎">
+                    <img src="./images/main_box1_txt.png" alt="첫번째">
+                </div>
+                <div>
+                    <img src="./images/main_box2_tit.png" alt="두번째2">
+                    <img src="./images/main_box2_txt.png" alt="두번째">
+                    <img src="./images/main_box2_img.png" alt="두번째3">
+                </div>
+                <div>
+                    <img src="./images/main_box3_hot.png" alt="세번째">
+                    <img src="./images/main_box3_tit.png" alt="세번째2">
+                    <img src="./images/main_box3_txt.png" alt="세번째3">
+                    <img src="./images/main_box3_img.png" alt="세번째4">
+                </div>
+                <div>
+                    <img src="./images/main_box4_tit.png" alt="네번째">
+                    <img src="./images/main_box4_txt.png" alt="네번째2">
+                    <img src="./images/main_box4_img.png" alt="네번째3">
+                </div>
+                <div>
+                    <img src="./images/main_box5_go.png" alt="다섯번째">
+                </div>
+                <div>
+                    <img src="./images/main_box6_go.png" alt="여섯번째">
+                </div>
+                <div>
+                    <img src="./images/main_box7_tit.png" alt="일곱번째">
+                    <img src="./images/main_box7_txt.png" alt="일곱번째2">
+                    <img src="./images/main_box7_img.png" alt="일곱번째3">
+                </div>
+                <div id="aside">
+                    <img src="./images/main_floating_bg.png" alt="옆">
+                    <img src="./images/main_floating_tit.png" alt="글자">
+                </div>
+                </div>
+                <div id="latest">
+                    <div class="info1">
+                        <img src="./images/info.png" alt="정보">
+                        <img src="./images/happy.png" alt="행복">
+                    </div>
+                    <div class="info2">
+                        <img src="./images/reser.png" alt="예약">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <a href="#">이번 주말 예약될까요? ㅠㅠ</a>
+                                    </td>
+                                    <td>06-23</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <a href="#">예약문의 합니다</a>
+                                    </td>
+                                    <td>06-29</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <a href="#">회사 워크샵 문의</a>
+                                    </td>
+                                    <td>07-01</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <a href="#">2일에서 10일까지 자스민방 예약 가능할까요?</a>
+                                    </td>
+                                    <td>07-01</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="info3">
+                        <img src="./images/notice.png" alt="공지">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <a href="#">2222</a>
+                                    </td>
+                                    <td>06-23</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <a href="#">레저체험</a>
+                                    </td>
+                                    <td>06-29</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <a href="#">실내 금연</a>
+                                    </td>
+                                    <td>07-01</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <a href="#">미취학 아동 유의사항</a>
+                                    </td>
+                                    <td>07-01</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="info4">
+                        <a href="#">
+                        <img src="./images/gallery.png" alt="갤러리">
+                        </a>
+                        <a href="#">
+                        <img src="./images/main_latest_gallery1.jpg" alt="갤러리1">
+                        </a>
+                        <a href="#">
+                        <img src="./images/main_latest_gallery2.jpg" alt="갤러리2">
+                        </a>
+                        <a href="#">
+                        <img src="./images/main_latest_gallery3.jpg" alt="갤러리3">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <article>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </article>
+        </main>
+        <footer>
+            <div id="address">
+                <img src="img/footer_logo.png" class="logo" alt="logo" />
+                <p>
+                  (주)리조트 | 대표이사: 홍길동 | 소재지: 부산시 금정구 따듯한동 123-1<br />
+                  Tel: 070-000-0000/ Fax: 051-000-0000/ 사업자등록번호: 123-12-12345<br />
+                  <span id="copy">Copyright ⓒ (c) Since 2013 <span id="resort">Resort</span>. All rights reserved</span>
+                </p>
+        </footer>
+    </div>
+    
+</body>
+</html>
