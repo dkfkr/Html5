@@ -331,13 +331,7 @@ main > .info {
         #sub > .introduction > aside > .lnb > li:nth-child(1).on > a {background-image: url(../images/sub_cate1_lnb1_ov.png);}
         #sub > .introduction > aside > .lnb > li:nth-child(2).on > a {background-image: url(../images/sub_cate1_lnb2_ov.png);}
 
-        #sub > .introduction > article > nav > p {
-            position: absolute;
-            right: 0;
-            bottom: 5px;
-            color: #585858;
-        }
-        #sub > .introduction > article > nav > p > strong {
+        #sub > .introduction > article > p > strong {
             font-weight: bold;
             color: #91ba15;
         }
